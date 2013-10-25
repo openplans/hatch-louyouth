@@ -104,7 +104,8 @@ class AppMixin (object):
         context['categories'] = json.dumps(CategorySerializer(category_query).data)
 
         app_config_query = AppConfig.objects.all()[:1]
-        context['app'] = json.dumps(AppConfigSerializer(app_config_query[0]).data)
+        context['app'] = app_config_query[0]
+        context['app_json'] = json.dumps(AppConfigSerializer(app_config_query[0]).data)
 
         if user:
             serializer = UserSerializer(user)

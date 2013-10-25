@@ -403,6 +403,10 @@ class AppConfig (models.Model):
     visionary_plural = models.CharField(max_length=50)
     ally = models.CharField(max_length=50)
     ally_plural = models.CharField(max_length=50)
+    city = models.CharField(max_length=50)
+
+    welcome_prompt = models.CharField(max_length=1024)
+
 
     def __unicode__(self):
         return '%s | "%s"' % (self.title, self.subtitle)
