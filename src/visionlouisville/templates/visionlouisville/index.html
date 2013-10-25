@@ -107,6 +107,7 @@
     {{NS}}.loginURL = '{% url "socialauth_begin" backend="twitter" %}';
     {{NS}}.twitterConf = {{ twitter_config|safe }};
     {{NS}}.categories = {{ categories|safe }};
+    {{NS}}.appConfig = {{ app|safe }};
   </script>
 
   {% if debug %}
