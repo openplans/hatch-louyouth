@@ -2,7 +2,7 @@
 # Web server
 # ==============================
 
-Django
+Django<=1.5.5
 
 
 
@@ -39,7 +39,7 @@ django-social-auth
 # APIs
 # ==============================
 
-djangorestframework
+djangorestframework==2.3.7
 PIL  # For image verification
 
 
@@ -67,4 +67,4 @@ django-shorturls
 
 nose
 django-nose
-django-debug-toolbar
+django-debug-toolbar==0.11.0
